@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus E-books</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Configurações básicas */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5em;
+    color: #FFD700;
+    margin-bottom: 30px;
+}
+
+/* Grade de livros */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Cartão de livro */
+.book-card {
+    background-color: #1A1A1A;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.book-card h2 {
+    font-size: 1.5em;
+    color: #FFD700;
+    margin: 10px 0;
+}
+
+.book-card p {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Botão de compra */
+.book-card button {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-card button:hover {
+    background-color: #e6b800;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Meus E-books</h1>
+        <div class="book-grid">
+            <div class="book-card">
+                <img src="ebook1.jpg" alt="E-book 1">
+                <h2>E-book 1</h2>
+                <p>Aprenda como criar um negócio online em 24 horas!</p>
+                <button>Comprar</button>
+            </div>
+            <div class="book-card">
+                <img src="ebook2.jpg" alt="E-book 2">
+                <h2>E-book 2</h2>
+                <p>Como criar um cartão Visa em Angola.</p>
+                <button>Comprar</button>
+            </div>
+            <!-- Adicione mais livros aqui -->
+        </div>
+    </div>
+</body>
+</html>
